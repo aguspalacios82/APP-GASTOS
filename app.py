@@ -19,7 +19,7 @@ try:
     client = gspread.authorize(creds)
 
     # Abrir la hoja de cálculo
-    sheet = client.open("Gastos_App").sheet1
+    sheet = client.open("APP-GASTOS").sheet1
     st.success("✅ Conectado a Google Sheets")
 except Exception as e:
     st.error(f"Error de conexión: {e}")
